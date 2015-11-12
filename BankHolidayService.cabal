@@ -28,6 +28,7 @@ library
     , servant-client >= 0.4
     , servant-server >= 0.4
     , text
+    , time
     , aeson
     , either
     , warp
@@ -47,6 +48,7 @@ executable BankHolidayService
     , servant-client >= 0.4
     , servant-server >= 0.4
     , text
+    , time
     , aeson
     , either
     , warp

@@ -1,14 +1,15 @@
 {-# LANGUAGE DataKinds     #-}
 {-# LANGUAGE TypeOperators #-}
 
-module BankHolidayService.API () where
+module BankHolidayService.API (BankHolidayAPI, bankHolidayAPI) where
 
+import BankHolidayService.Types
 import Data.Proxy
+import Data.Time (Day)
 import Servant.API
-import Shifts.Types
 
-bankholidayAPI :: Proxy BankHolidayAPI
-bankholidayAPI = Proxy
+bankHolidayAPI :: Proxy BankHolidayAPI
+bankHolidayAPI = Proxy
 
 type BankHolidayAPI =
        ListHoliday
