@@ -15,5 +15,5 @@ type BankHolidayAPI =
        ListHoliday
 
 type ListHoliday = "holidays"
-  :> Capture "year" Int
+  :> Capture "year" Integer
   :> Get '[JSON] [Day]

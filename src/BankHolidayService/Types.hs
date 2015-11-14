@@ -13,7 +13,7 @@ import Data.Time
 import GHC.Generics
 
 data BankHoliday = BankHoliday { _day :: Day }
-    deriving (Show, Eq, ToJSON, FromJSON, Generic)
+    deriving (Show, Eq, Ord, ToJSON, FromJSON, Generic)
 
 -- parseDate :: String -> Day
 -- parseDate = parseTimeOrError True defaultTimeLocale "%Y-%m-%d"
